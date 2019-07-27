@@ -3,5 +3,10 @@ build:
   build:
     image: codeship/test:build
     dockerfile: build.Dockerfile
+  volumes_from:
+    - data
+
+data:
+  image: busybox
   volumes:
-    - ./tmp/dist:/codeship-test/dist
+    - /codeship-test
