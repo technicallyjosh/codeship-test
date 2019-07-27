@@ -11,5 +11,3 @@ FROM node:10
 WORKDIR /codeship-test
 
 COPY --from=build /codeship-test .
-
-VOLUME [ "/codeship-test" ]
