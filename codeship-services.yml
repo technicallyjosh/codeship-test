@@ -4,4 +4,4 @@ build:
     image: codeship/test:build
     dockerfile: build.Dockerfile
   volumes:
-    - ./tmp:./
+    - ./tmp:/codeship-test
