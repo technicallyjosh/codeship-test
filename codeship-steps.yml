@@ -5,4 +5,4 @@
       command: npm run build
     - name: LS
       service: build
-      command: ls -al
+      command: ls -al dist
