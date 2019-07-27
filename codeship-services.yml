@@ -9,4 +9,4 @@ build:
 data:
   image: busybox
   volumes:
-    - ./:/codeship-test
+    - ./tmp/data:/codeship-test
