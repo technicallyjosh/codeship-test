@@ -1,0 +1,8 @@
+- type: serial
+  steps:
+    - name: Build Lib
+      service: build
+      command: npm run build
+    - name: Test ls Command
+      service: build
+      command: ls -al lib
