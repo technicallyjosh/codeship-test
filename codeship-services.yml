@@ -3,7 +3,6 @@ build:
   build:
     image: codeship/test:build
     dockerfile: build.Dockerfile
-    encrypted_args_file: codeship.env.encrypted
   volumes:
     - ./tmp/node_modules:/codeship-test/node_modules
     - ./tmp/dist:/codeship-test/dist
