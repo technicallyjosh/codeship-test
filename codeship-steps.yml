@@ -1,8 +1,11 @@
-- type: serial
+- type: parallel
   steps:
     - name: Build
       service: build
       command: npm run build
     - name: LS
+      service: build
+      command: ls -al
+    - name: LS Dist
       service: build
       command: ls -al dist
