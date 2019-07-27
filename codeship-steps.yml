@@ -2,7 +2,7 @@
   steps:
     - name: Build Lib
       service: build
-      command: npm run build
+      command: ls -al
     - name: Test ls Command
       service: build
       command: ls -al dist
