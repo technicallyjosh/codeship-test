@@ -3,6 +3,8 @@ build:
   build:
     image: codeship/test:build
     dockerfile: build.Dockerfile
+  volumes:
+    - ./node_modules:/codeship-test/node_modules
   volumes_from:
     - data
 
